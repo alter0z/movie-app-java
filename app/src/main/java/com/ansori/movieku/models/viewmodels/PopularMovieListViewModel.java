@@ -1,13 +1,14 @@
 package com.ansori.movieku.models.viewmodels;
 
 import androidx.lifecycle.LiveData;
+import androidx.lifecycle.ViewModel;
 
 import com.ansori.movieku.models.MovieModel;
 import com.ansori.movieku.repositories.PopularMovieRepository;
 
 import java.util.List;
 
-public class PopularMovieListViewModel {
+public class PopularMovieListViewModel extends ViewModel {
     private PopularMovieRepository popularMovieRepository;
 
     public PopularMovieListViewModel() {
